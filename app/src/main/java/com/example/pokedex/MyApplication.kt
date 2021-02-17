@@ -1,8 +1,10 @@
 package com.example.pokedex
 
 import android.app.Application
+import com.example.pokedex.data.PokemonDatabase
 import com.example.pokedex.repository.PokemonRepository
 import timber.log.Timber
+
 
 class MyApplication: Application() {
     val database by lazy { PokemonDatabase.getDatabase(this)}
