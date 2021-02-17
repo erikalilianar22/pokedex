@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val viewModelFactory by lazy{
         val myApplication = application as MyApplication
         val pokemonRepository = myApplication.pokemonRepository
-        val database= MyApplication.database
+        val database= myApplication.database
         MainViewModelFactory(pokemonRepository, database)
     }
 
